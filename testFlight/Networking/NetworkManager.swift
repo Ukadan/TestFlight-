@@ -1,7 +1,14 @@
 import Foundation
 import Alamofire
 
-class NetworkManagerAF {
+protocol NetworkManager: AnyObject {
+    func loadTodayMovies(completion: @escaping ([Movie]) -> Void)
+    func loadSoonMovies(completion: @escaping ([Movie]) -> Void)
+    func loadTrendingMovies(completion: @escaping ([Movie]) -> Void)
+    func loadMovies(path: String, completion: @escaping ([Movie]) -> Void)
+}
+
+class NetworkManagerAF: NetworkManager {
     private let API_KEY = "e516e695b99f3043f08979ed2241b3db"
     
     static var shared = NetworkManagerAF()
@@ -60,9 +67,4 @@ class NetworkManagerAF {
             }
         }
     }
-}
-
-enum MyError: Error {
-    case invalidURL
-    case decodingError
 }
