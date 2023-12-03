@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.8.0)
+  - Kingfisher (7.9.1)
+  - SnapKit (5.6.0)
+  - Swinject (2.8.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - SnapKit
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - SnapKit
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+
+PODFILE CHECKSUM: 6d6f7b7edb5821b45330e55e16d6650ab234eb32
+
+COCOAPODS: 1.13.0
