@@ -1,6 +1,6 @@
 import UIKit
 
-class SettingDetailViewController: UIViewController {
+final class SettingDetailViewController: UIViewController {
     var coordinator: SettingDetailFlow?
     
     override func viewDidLoad() {
@@ -8,11 +8,11 @@ class SettingDetailViewController: UIViewController {
         setupUI()
     }
     
-    @objc func dismissDetailTapped(_ sender: UIButton) {
+    @objc private func dismissDetailTapped(_ sender: UIButton) {
         coordinator?.dismissDetail()
     }
     
-    let dismissDetailButton: UIButton = {
+    private let dismissDetailButton: UIButton = {
         let button = UIButton()
         button.setTitle("Dismiss detail", for: .normal)
         button.setTitleColor(.white, for: .normal)

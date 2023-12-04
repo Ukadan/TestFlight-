@@ -5,7 +5,7 @@ protocol SettingDetailFlow {
 }
 
 class SettingDetailtCoordinator: BaseCoordinator, SettingDetailFlow {
-    let navigationController: UINavigationController
+    private let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

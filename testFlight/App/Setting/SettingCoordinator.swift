@@ -4,7 +4,7 @@ protocol SettingFlow: AnyObject {
     func coordinateToDetail()
 }
 
-class SettingsCoordinator: BaseCoordinator, SettingFlow {
+final class SettingsCoordinator: BaseCoordinator, SettingFlow {
     
     private var navigationController: UINavigationController
     

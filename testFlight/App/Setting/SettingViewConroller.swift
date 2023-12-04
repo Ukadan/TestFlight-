@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class SettingViewConroller: UIViewController {
+final class SettingViewConroller: UIViewController {
     var coordinator: SettingFlow?
     
     override func viewDidLoad() {
@@ -10,11 +10,11 @@ class SettingViewConroller: UIViewController {
         setupUI()
     }
     
-    @objc func showDetailTapped(_ sender: UIButton) {
+    @objc private func showDetailTapped(_ sender: UIButton) {
         coordinator?.coordinateToDetail()
     }
     
-    let showDetailButton: UIButton = {
+    private let showDetailButton: UIButton = {
         let button = UIButton()
         button.setTitle("Show detail", for: .normal)
         button.setTitleColor(.white, for: .normal)

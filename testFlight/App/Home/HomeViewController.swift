@@ -2,11 +2,11 @@ import Foundation
 import UIKit
 import Combine
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     private var cancellables: Set<AnyCancellable> = []
     
-    let searchBar = UISearchBar()
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    private let searchBar = UISearchBar()
+    private let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
     var viewModel: HomeViewModel
     var coordinator: HomeCoordinator
@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         viewModel.loadTrendingMovies()
     }
     
-    func bindViewModel() {
+    private func bindViewModel() {
         viewModel.$trendingMovies
             .sink { [weak self] movies in
                 self?.collectionView.reloadData()
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
             .store(in: &cancellables)
     }
 
-    func setupUI() {
+    private func setupUI() {
         view.addSubview(searchBar)
         searchBar.placeholder = "Search"
         view.addSubview(collectionView)
@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
     }
 
-    func setupConstraints() {
+    private func setupConstraints() {
         searchBar.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.leading.trailing.equalToSuperview()

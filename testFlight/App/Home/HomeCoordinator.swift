@@ -1,6 +1,6 @@
 import UIKit
 
-class HomeCoordinator: BaseCoordinator {
+final class HomeCoordinator: BaseCoordinator {
     
     private var navigationController: UINavigationController
     private let viewModel = HomeViewModel()
