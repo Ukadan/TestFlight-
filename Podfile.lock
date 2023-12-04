@@ -3,12 +3,15 @@ PODS:
   - Kingfisher (7.9.1)
   - SnapKit (5.6.0)
   - Swinject (2.8.3)
+  - SwinjectAutoregistration (2.8.3):
+    - Swinject (~> 2.8.3)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
   - SnapKit
   - Swinject
+  - SwinjectAutoregistration
 
 SPEC REPOS:
   trunk:
@@ -16,13 +19,15 @@ SPEC REPOS:
     - Kingfisher
     - SnapKit
     - Swinject
+    - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+  SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
 
-PODFILE CHECKSUM: 6d6f7b7edb5821b45330e55e16d6650ab234eb32
+PODFILE CHECKSUM: 5032666c6c1b0940facda3bc16240d1b3c86c871
 
 COCOAPODS: 1.13.0

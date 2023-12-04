@@ -27,6 +27,9 @@
 		CE67A7AC2B1AB1F40033D482 /* testFlight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE67A7AA2B1AB1F40033D482 /* testFlight.xcdatamodeld */; };
 		CE67A7AE2B1AB1F70033D482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE67A7AD2B1AB1F70033D482 /* Assets.xcassets */; };
 		CE67A7B12B1AB1F70033D482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE67A7AF2B1AB1F70033D482 /* LaunchScreen.storyboard */; };
+		CEC843462B1DB5B70024E1B3 /* Container+ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC843452B1DB5B70024E1B3 /* Container+ViewModels.swift */; };
+		CEC843482B1DB64F0024E1B3 /* Container+Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC843472B1DB64F0024E1B3 /* Container+Coordinators.swift */; };
+		CEC8434A2B1DB7080024E1B3 /* Container+RegisterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC843492B1DB7080024E1B3 /* Container+RegisterDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		CE67A7AD2B1AB1F70033D482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE67A7B02B1AB1F70033D482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE67A7B22B1AB1F70033D482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC843452B1DB5B70024E1B3 /* Container+ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ViewModels.swift"; sourceTree = "<group>"; };
+		CEC843472B1DB64F0024E1B3 /* Container+Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Coordinators.swift"; sourceTree = "<group>"; };
+		CEC843492B1DB7080024E1B3 /* Container+RegisterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+RegisterDependencies.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +184,23 @@
 				CE29DB732B1B12A0004336F7 /* Aplication */,
 				CE29DB762B1B5613004336F7 /* App */,
 				CE29DB532B1ACB27004336F7 /* Networking */,
+				CEC843442B1DB4FE0024E1B3 /* DI */,
 				CE67A7AF2B1AB1F70033D482 /* LaunchScreen.storyboard */,
 				CE67A7AA2B1AB1F40033D482 /* testFlight.xcdatamodeld */,
 				CE67A7AD2B1AB1F70033D482 /* Assets.xcassets */,
 				CE67A7B22B1AB1F70033D482 /* Info.plist */,
 			);
 			path = testFlight;
+			sourceTree = "<group>";
+		};
+		CEC843442B1DB4FE0024E1B3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CEC843452B1DB5B70024E1B3 /* Container+ViewModels.swift */,
+				CEC843472B1DB64F0024E1B3 /* Container+Coordinators.swift */,
+				CEC843492B1DB7080024E1B3 /* Container+RegisterDependencies.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		F997F72D6E906702F65C1F9F /* Frameworks */ = {
@@ -310,6 +327,7 @@
 			files = (
 				CE29DB552B1ACB88004336F7 /* NetworkManager.swift in Sources */,
 				CE29DB7B2B1B5809004336F7 /* HomeViewModel.swift in Sources */,
+				CEC843462B1DB5B70024E1B3 /* Container+ViewModels.swift in Sources */,
 				CE29DB522B1AC2FE004336F7 /* BaseCoordinator.swift in Sources */,
 				CE29DB7F2B1B5E44004336F7 /* TabBarController.swift in Sources */,
 				CE29DB902B1C2702004336F7 /* SettingDetailViewController.swift in Sources */,
@@ -320,9 +338,11 @@
 				CE29DB812B1B5E97004336F7 /* SettingViewConroller.swift in Sources */,
 				CE29DB922B1C28CA004336F7 /* SettingDetailtCoordinator.swift in Sources */,
 				CE67A7A22B1AB1F40033D482 /* AppDelegate.swift in Sources */,
+				CEC8434A2B1DB7080024E1B3 /* Container+RegisterDependencies.swift in Sources */,
 				CE67A7A42B1AB1F40033D482 /* SceneDelegate.swift in Sources */,
 				CE29DB7D2B1B5D5A004336F7 /* HomeCoordinator.swift in Sources */,
 				CE29DB8D2B1B787D004336F7 /* AppCoordinator.swift in Sources */,
+				CEC843482B1DB64F0024E1B3 /* Container+Coordinators.swift in Sources */,
 				CE29DB592B1ACDE3004336F7 /* Movie.swift in Sources */,
 				CE29DB792B1B5683004336F7 /* HomeCollectionViewCell.swift in Sources */,
 			);

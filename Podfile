@@ -8,7 +8,7 @@ target 'testFlight' do
   pod 'SnapKit'
   pod 'Alamofire'
   pod 'Kingfisher'
-
+  pod 'SwinjectAutoregistration'
 
   # Pods for testFlight
 

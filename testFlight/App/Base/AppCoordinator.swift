@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import Swinject
 
 class AppCoordinator: BaseCoordinator {
     private var window: UIWindow
@@ -7,6 +8,8 @@ class AppCoordinator: BaseCoordinator {
         let navigationController = UINavigationController()
         return navigationController
     }()
+    
+    static let container = Container()
     
     init(window: UIWindow) {
         self.window = window

@@ -2,8 +2,8 @@ import UIKit
 
 class HomeCoordinator: BaseCoordinator {
     
-    private let viewModel = HomeViewModel()
     private var navigationController: UINavigationController
+    private let viewModel = HomeViewModel()
     
     
     init(navigationController: UINavigationController) {
