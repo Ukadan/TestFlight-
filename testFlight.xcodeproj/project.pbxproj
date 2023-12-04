@@ -107,10 +107,10 @@
 		CE29DB762B1B5613004336F7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CE29DB502B1AC1E1004336F7 /* Base */,
 				CE29DB832B1B6716004336F7 /* TabBar */,
 				CE29DB822B1B66FE004336F7 /* Setting */,
 				CE29DB8E2B1C26DA004336F7 /* SettingDetail */,
-				CE29DB502B1AC1E1004336F7 /* Base */,
 				CE29DB772B1B563C004336F7 /* Home */,
 			);
 			path = App;
