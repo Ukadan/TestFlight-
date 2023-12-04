@@ -10,7 +10,7 @@ protocol NetworkManager: AnyObject {
 
 class NetworkManagerAF: NetworkManager {
     private let API_KEY = "e516e695b99f3043f08979ed2241b3db"
-    
+
     static var shared = NetworkManagerAF()
     
     private lazy var urlComponents: URLComponents = {
